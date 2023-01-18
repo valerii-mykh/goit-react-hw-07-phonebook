@@ -8,14 +8,13 @@ export const Label = styled.label`
 `;
 
 export const FindInput = styled.input`
-  all: unset;
   display: flex;
   border: 2px solid black;
-  margin: 10px 0;
-  padding: 15px;
-  font-size: 20px;
+  margin: 10px auto;
+  padding: 10px 30px;
+  font-size: 18px;
   &:focus-visible {
     border-radius: 4px;
-    border: 3px solid lightblue;
+    border: 2px solid lightblue;
   }
 `;

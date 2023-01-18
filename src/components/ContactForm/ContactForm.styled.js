@@ -2,15 +2,11 @@ import styled from 'styled-components';
 import { Form, Field, ErrorMessage } from 'formik';
 
 export const FormContact = styled(Form)`
-  border: 1px solid black;
-  width: 450px;
-  display: block;
-  padding: 15px;
-  margin: 0;
+  max-width: 100%;
 `;
 
 export const ErrorText = styled(ErrorMessage)`
-  color: tomato;
+  color: red;
 `;
 
 export const Label = styled.label`
@@ -21,37 +17,29 @@ export const Label = styled.label`
 `;
 
 export const Input = styled(Field)`
-  all: unset;
   display: flex;
   border: 2px solid black;
-  margin: 10px 0;
-  padding: 15px;
+  margin: 10px auto;
+  padding: 10px 30px;
   font-size: 20px;
   &:focus-visible {
     border-radius: 4px;
-    border: 3px solid lightblue;
+    border: 2px solid lightblue;
   }
 `;
 
 export const Button = styled.button`
-  box-shadow: inset 0px 0px 12px 3px #ffffff;
-  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
-  background-color: #ededed;
-  border-radius: 4px;
-  border: 2px solid #dcdcdc;
-  display: inline-block;
-  cursor: pointer;
-  color: #212121;
-  font-family: Arial;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 16px 37px;
+  font-weight: 700;
+  color: white;
   text-decoration: none;
-  margin: 10px 0;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64, 199, 129);
+  box-shadow: 0 -3px rgb(53, 167, 110) inset;
+  transition: 0.2s;
+  margin: 15px 0;
 
   &:hover {
-    background: linear-gradient(to bottom, #212121 5%, #ededed 100%);
-    background-color: #212121;
-    color: #ffffff;
+    background: rgb(53, 167, 110);
   }
 `;
